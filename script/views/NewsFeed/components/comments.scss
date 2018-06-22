@@ -1,0 +1,60 @@
+@import 'styles/colors.scss';
+
+.CommentContainer{
+  background-color: $feed-item-comments-bg;
+
+  &__ProfileImg {
+    align-self: center;
+  }
+
+  &__FormContainer {
+    flex: 1;
+
+    .BuyerNameLabel {
+      color: $feed-item-buyer-name;
+    }
+
+    .AssetDateLabel {
+      color: $feed-item-gray;
+    }
+
+    .CommentInput{
+      border: none;
+      font-weight: 300;
+      outline: none;
+      outline: 0;
+      -webkit-appearance: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+
+      &:hover, &:focus, &:active{
+        outline: none;
+        outline: 0;
+        -webkit-appearance: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+    }
+
+    ::placeholder {
+      color: $feed-item-gray;
+      opacity: 1;
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: $feed-item-gray;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $feed-item-gray;
+    }
+  }
+
+  .FormCommentItem{
+    &__FormWrapper{
+      background-color: white;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import "node_modules/bootstrap/scss/_functions";
+@import "node_modules/bootstrap/scss/_variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+@import 'styles/colors.scss';
+
+.FeedItem {
+  border: 1px solid $feed-item-border;
+  font-weight: 300;
+
+  &__Body {
+    border-bottom: 1px solid $feed-item-border;
+
+    .BuyerNameLabel{
+      color: $feed-item-buyer-name;
+      font-weight: 500;
+    }
+
+    .AssetNameLabel {
+      color: $feed-item-asset-name;
+    }
+
+    .DateLabel{
+      color: $feed-item-gray;
+    }
+  }
+
+  &__Footer {
+    color: $feed-item-gray;
+
+    .LikeContainer, .CommentLabelContainer{
+      flex: 1;
+    }
+
+    .LikeLabelContainer, .CommentLabelContainer{
+      &__Label{
+        cursor: pointer;
+        outline: none;
+        outline: 0;
+        -webkit-appearance: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+        &:hover, &:focus, &:active{
+          outline: none;
+          outline: 0;
+          -webkit-appearance: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .CommentLabelContainer{
+      &__Label{
+        position: relative;
+        left: 33%;
+        @include media-breakpoint-down(sm){
+          left: 16%;
+        }
+      }
+    }
+
+    .LikeLabelContainer{
+      &__Label{
+        position: relative;
+        left: 42%;
+        width: 50px;
+        @include media-breakpoint-down(sm){
+          left: 30%;
+        }
+      }
+
+      .red{
+        color: $heart-color;
+      }
+    }
+  }
+}

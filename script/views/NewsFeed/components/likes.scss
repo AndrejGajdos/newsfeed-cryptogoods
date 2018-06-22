@@ -1,0 +1,10 @@
+@import 'styles/colors.scss';
+
+.LikesList{
+  max-height: 148px;
+  overflow: auto;
+
+  .userNameLabel{
+    color: $feed-item-asset-name;
+  }
+}

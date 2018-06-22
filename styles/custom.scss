@@ -1,0 +1,9 @@
+@import "~bootstrap/scss/bootstrap";
+@import '~react-tippy/dist/tippy.css';
+@import '~font-awesome/css/font-awesome.css';
+@import '~react-slidedown/lib/slidedown.css';
+@import '~react-toastify/dist/ReactToastify.css';
+
+.tippy-popper .tippy-tooltip.light-theme[data-animatefill]{
+  background-color: white;
+}

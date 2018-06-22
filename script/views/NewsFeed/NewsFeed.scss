@@ -1,0 +1,23 @@
+.FeedList{
+  // 116 px -- header + footer, 1rem content height
+  max-height: calc(100vh - 116px - 1rem);
+  overflow: auto;
+
+  .FeedItemAnim-enter {
+    opacity: 0;
+  }
+
+  .FeedItemAnim-enter-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .FeedItemAnim-exit {
+    opacity: 1;
+  }
+
+  .FeedItemAnim-exit-active {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
