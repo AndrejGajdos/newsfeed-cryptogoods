@@ -3,7 +3,7 @@ Newsfeed for events on cryptogoods. Single, responsive page for newsfeed. Pollin
 
 ## Preview
 
-![preview](media/newsfeed-cryptogood-preview.gif)
+<img src="https://github.com/AndrejGajdos/newsfeed-cryptogoods/blob/master/media/newsfeed-cryptogood-preview.gif" width="500">
 
 ## Demo
 
