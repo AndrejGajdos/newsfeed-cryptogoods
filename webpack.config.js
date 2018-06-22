@@ -96,7 +96,7 @@ if (TARGET === 'build' || !TARGET) {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        title: 'neon-js',
+        title: 'newsfeed-cryptogoods',
         template: 'index-template.ejs',
       }),
     ],
@@ -146,7 +146,7 @@ if (TARGET === 'prod' || !TARGET) {
         'process.env.NODE_ENV': JSON.stringify('production'),
       }),
       new HtmlWebpackPlugin({
-        title: 'neon-js',
+        title: 'newsfeed-cryptogoods',
         template: 'index-template.ejs',
       }),
       new webpack.optimize.AggressiveMergingPlugin(),
