@@ -23,7 +23,7 @@ $ npm i
 $ npm run webpack
 
 # run node.js server
-$ npm run webpack
+$ npm run api
 ```
 
 ## License
